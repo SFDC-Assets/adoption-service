@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Case Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Great work, this Case is now Resolved! Go back to the queue and grab another!&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Priority</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <fieldNames>Product__c</fieldNames>
+        <fieldNames>EngineeringReqNumber__c</fieldNames>
+        <fieldNames>PotentialLiability__c</fieldNames>
+        <info>&lt;p&gt;With this Case now Escalated, be sure to take the following steps:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Note the Priority. Are you giving it the appropriate attention?&lt;/li&gt;&lt;li&gt;Understand the issue(s) being raised by reviewing the Case Description.&lt;/li&gt;&lt;li&gt;What product is the customer having an issue with? Please research cause.&lt;/li&gt;&lt;li&gt;Document all findings under the Engineering Req Number.&lt;/li&gt;&lt;li&gt;Re-calculate &lt;span style=&quot;font-size: 13px;&quot;&gt;Potential Liability &lt;/span&gt;to determine if it is correct. If not, please correct.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Priority</fieldNames>
+        <fieldNames>Subject</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <fieldNames>Reason</fieldNames>
+        <info>&lt;p&gt;Within this Case, be sure to take the following steps:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Note the Priority. Are you giving it the appropriate attention?&lt;/li&gt;&lt;li&gt;What is the case about? Read through the Subject and Description to understand.&lt;/li&gt;&lt;li&gt;Based on the Subject and Description, determine if the Case Reason is correct. If not, please correct it.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Priority</fieldNames>
+        <fieldNames>Product__c</fieldNames>
+        <fieldNames>EngineeringReqNumber__c</fieldNames>
+        <fieldNames>PotentialLiability__c</fieldNames>
+        <info>&lt;p&gt;As you begin to work the Case, be sure to take the following steps:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Note the Priority. Are you giving it the appropriate attention?&lt;/li&gt;&lt;li&gt;What product is the customer having an issue with? Is there a known issue with that product? If so, Escalate to Engineering.&lt;/li&gt;&lt;li&gt;If this Case needs to be escalated, be sure to locate and add the Engineering Req Number.&lt;/li&gt;&lt;li&gt;Based on the issue, calculate the Potential Liability.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Working</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>
