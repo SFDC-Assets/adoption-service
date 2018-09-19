@@ -1,6 +1,7 @@
 {
-    "orgName": "shane.mclaughlin Company",
+    "orgName": "workshops",
     "edition": "Developer",
+    "description": "lightning adoption case workshop",
     "features" : ["ServiceCloud", "LightningServiceConsole"],
     "orgPreferences" : {
         "enabled": ["S1DesktopEnabled", "PathAssistantsEnabled", "ChatterEnabled"],
