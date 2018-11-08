@@ -3,9 +3,25 @@
     "edition": "Developer",
     "description": "lightning adoption case workshop",
     "features" : ["ServiceCloud", "LightningServiceConsole"],
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled", "PathAssistantsEnabled", "ChatterEnabled"],
-        "disabled": ["S1EncryptedStoragePref2"]
+    "settings": {
+        "orgPreferenceSettings": {
+            "chatterEnabled": true,
+            "pathAssistantsEnabled": true,
+            "s1DesktopEnabled": true,
+            "s1EncryptedStoragePref2": false
+        },
+        "caseSettings": {
+            "emailToCase" : {
+                "enableE2CSourceTracking": true,
+                "enableEmailToCase": true,
+                "enableHtmlEmail": false,
+                "enableOnDemandEmailToCase": false,
+                "enableThreadIDInBody": true,
+                "enableThreadIDInSubject": true,
+                "notifyOwnerOnNewCaseEmail": false,
+                "preQuoteSignature": false
+            }
+        }
     },
     "hasSampleData": true
 
